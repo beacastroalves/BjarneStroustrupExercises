@@ -6,6 +6,19 @@
  */
 package com.github.beacastroalves.chapter1;
 
-public class Ex07 {
+import java.util.Scanner;
 
+public class Ex07 {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.println("Type a number and find out if it is odd or even:");
+    int val1 = input.nextInt();
+    String numberIs = "odd";
+
+    if (val1 % 2 == 0) {
+      numberIs = "even";
+    }
+
+    System.out.printf("The value %d is an %s number.", val1, numberIs);
+  }
 }
